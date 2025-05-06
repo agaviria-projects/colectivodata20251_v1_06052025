@@ -34,12 +34,12 @@ asistenciaDataFrame=pd.read_csv("../data/asistencia_estudiantes_completo.csv")
 
 #Tarea: Filtros o consultas detalladas
 #1. Encontrar los estudiantes que si asistieron
-estudiantesQueAsistieron=asistenciaDataFrame.query('estado=="asistio"')
-print(estudiantesQueAsistieron)
+#estudiantesQueAsistieron=asistenciaDataFrame.query('estado=="asistio"')
+#print(estudiantesQueAsistieron)
 
 #2. Encontrar los estudiantes que faltaron
-#estudiantesQueFaltaron=asistenciaDataFrame.query('estado=="inasistencia"')
-#print(estudiantesQueFaltaron)
+estudiantesQueFaltaron=asistenciaDataFrame.query('estado=="inasistencia"')
+print(estudiantesQueFaltaron)
 
 #3. Encontrar los estudiantes que llegaron tarde(justificaron la inaxistencia)
 #justificado=asistenciaDataFrame.query('estado=="justificado"')
