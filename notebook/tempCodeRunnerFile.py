@@ -1,0 +1,1 @@
+print(usuarioDataFrame["tipo_usuario"].value_counts())

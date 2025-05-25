@@ -1,8 +1,22 @@
 import pandas as pd
 
+# Cargar archivo Excel desde carpeta 'data'
+usuarioDataFrame = pd.read_excel("../data/usuarios_sistema_completo.xlsx")
 
-usuarioDataFrame=pd.read_excel("../data/usuarios_sistema_completo.xlsx")
-print(usuarioDataFrame)
+# Mostrar primeras filas
+print(usuarioDataFrame.head())
+
+# Conteo de tipo de usuario
+print("\nConteo de tipos de usuario:")
+print(usuarioDataFrame["tipo_usuario"].value_counts())
+
+# Valores únicos para validar errores de escritura
+print("\nValores únicos en tipo_usuario:")
+print(usuarioDataFrame["tipo_usuario"].unique())
+
+# Verificar columnas con valores faltantes
+print("\nColumnas con valores faltantes:")
+print(usuarioDataFrame.isnull().sum())
 
 #print(usuarioDataFrame.isnull().sum)
 
@@ -76,4 +90,5 @@ print(usuarioDataFrame)
     #(usuarioDataFrame["fecha_nacimiento"] >= "2000-01-01")
 #]
 #print(nuevomilenio)
+
 

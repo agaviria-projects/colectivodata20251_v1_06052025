@@ -1,8 +1,8 @@
 import pandas as pd
 
 #Leyendo los datos de asistencias
-asistenciaDataFrame=pd.read_csv("../data/asistencia_estudiantes_completo.csv")
-#print(asistenciaDataFrame)
+# asistenciaDataFrame=pd.read_csv("../data/asistencia_estudiantes_completo.csv")
+# #print(asistenciaDataFrame)
 
 #Obteniendo informacion basica del dataframe
 #print(asistenciaDataFrame.info())
@@ -34,8 +34,8 @@ asistenciaDataFrame=pd.read_csv("../data/asistencia_estudiantes_completo.csv")
 
 #Tarea: Filtros o consultas detalladas
 #1. Encontrar los estudiantes que si asistieron
-estudiantesQueAsistieron=asistenciaDataFrame.query('estado=="asistio"')
-print(estudiantesQueAsistieron)
+# estudiantesQueAsistieron=asistenciaDataFrame.query('estado=="asistio"')
+# print(estudiantesQueAsistieron)
 
 #2. Encontrar los estudiantes que faltaron
 #estudiantesQueFaltaron=asistenciaDataFrame.query('estado=="inasistencia"')
@@ -115,3 +115,4 @@ print(estudiantesQueAsistieron)
 #7.Conteo de asistencias por grupo y estado
 #conteo=asistenciaDataFrame.groupby(['id_grupo','estado']).size()
 #print(conteo)
+
